@@ -1,0 +1,2 @@
+<?php
+// Init GL
