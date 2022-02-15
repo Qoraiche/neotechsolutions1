@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * @param int $itemsCount
+ * @param int $largePackagesAvailable
+ * @param int $smallPackagesAvailable
+ * @return int|mixed
+ */
 function countMinNumberOfCrates(int $itemsCount, int $largePackagesAvailable, int $smallPackagesAvailable)
 {
     $large = min([floor($itemsCount / 5), $largePackagesAvailable]);
@@ -7,4 +14,4 @@ function countMinNumberOfCrates(int $itemsCount, int $largePackagesAvailable, in
     return ($large * 5 + $small === $itemsCount) ? $large + $small : -1;
 }
 
-echo countMinNumberOfCrates(16, 2, 10);
+echo countMinNumberOfCrates(16, 2, 10); // 8;
