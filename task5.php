@@ -14,4 +14,4 @@ function countMinNumberOfCrates(int $itemsCount, int $largePackagesAvailable, in
     return ($large * 5 + $small === $itemsCount) ? $large + $small : -1;
 }
 
-echo countMinNumberOfCrates(16, 2, 10); // 8;
+//echo countMinNumberOfCrates(16, 2, 10); // 8;
